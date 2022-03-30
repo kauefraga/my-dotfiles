@@ -2,9 +2,10 @@
 
 <p align="center">
   <a href="https://github.com/kauefraga/my-dotfiles/commits/main">
-    <img 
+    <img
       alt="Github last commit"
       src="https://img.shields.io/github/last-commit/kauefraga/my-dotfiles.svg"
+    />
   </a>
   <img
     alt="GitHub LICENSE"
@@ -13,12 +14,27 @@
 </p>
 
 
-<h4 align="center">:rocket: Meu ambiente de desenvolvimento</h4>
+<h4 align="center">🚀 Meu ambiente de desenvolvimento</h4>
 
-## :arrow_down: How to download
-.
-.
-.
+## Resumo do meu setup
+- Estou usando [hyper](https://hyper.is)
+- Com powershell
+- gerenciando as aplicações com [chocolatey](https://chocolatey.org)
+- configurando temas com [oh my posh](https://ohmyposh.dev)
+
+## ⬇️ Como baixar
+- Comece pelo [chocolatey](https://chocolatey.org/install)
+- Vamos instalar o hyper e configurá-lo
+  - `choco install hyper`
+  - Após, abra-o e clique <kbd>ctrl + , </kbd>
+  - Copie e cole o .hyper.js
+  - Reinicie e pronto!
+- ...
+
+
+## Créditos
+
+- https://github.com/craftzdog/dotfiles-public
 
 ## 📝 License
 
