@@ -73,8 +73,8 @@ module.exports = {
             lightCoral: '#F08080',
         },
 
-		 // wsl config: 'C:\\Windows\\System32\\wsl.exe', ['~']
-		 // powersh config: 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', []
+	// wsl config: 'C:\\Windows\\System32\\wsl.exe', ['~']
+	// powersh config: 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe', []
         shell: 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe',
         shellArgs: [],
         env: {},
@@ -109,6 +109,12 @@ module.exports = {
         // set to true to preserve working directory when creating splits or tabs
         preserveCWD: true,
         // for advanced config flags please refer to https://hyper.is/#cfg
+	hyperBorder: {
+          borderWidth: '1px',
+          borderRadiusInner: '12px',
+	  borderRadiusOuter: '12px'
+      	}
+
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
@@ -117,8 +123,9 @@ module.exports = {
     //   `@company/project`
     //   `project#1.0.1`
     plugins: [
-	// 'hyper-omni-theme',
 	'hypercwd',
+    	'hyper-tab-icons',
+    	'hyperborder',
 	'hyper-pane',
 	'hyper-material-theme'
     ],
