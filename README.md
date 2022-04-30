@@ -17,18 +17,17 @@
 <h4 align="center">🚀 Meu ambiente de desenvolvimento</h4>
 
 ## Resumo do meu setup
-- Estou usando [hyper](https://hyper.is)
+- Estou usando windows terminal
 - Com powershell
 - gerenciando as aplicações com [chocolatey](https://chocolatey.org)
-- configurando temas com [oh my posh](https://ohmyposh.dev)
+- configurando temas com [starship](https://starship.rs)
 
 ## ⬇️ Como baixar
 - Comece pelo [chocolatey](https://chocolatey.org/install)
-- Vamos instalar o hyper e configurá-lo
-  - `choco install hyper`
-  - Após, abra-o e clique <kbd>ctrl + , </kbd>
-  - Copie e cole o .hyper.js
-  - Reinicie e pronto!
+- Instale o starship
+  - `choco install starship`
+- notepad $PROFILE
+  - Copie minha configuração
 - ...
 
 
