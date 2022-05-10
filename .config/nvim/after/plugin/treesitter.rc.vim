@@ -18,7 +18,6 @@ require'nvim-treesitter.configs'.setup {
     "typescript",
     "python",
     "toml",
-    "fish",
     "php",
     "json",
     "yaml",
