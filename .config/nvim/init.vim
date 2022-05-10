@@ -113,7 +113,7 @@ autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 " Imports "{{{
 " ---------------------------------------------------------------------
 runtime ./plug.vim
-runtime ./maps.vim
+" runtime ./maps.vim
 "}}}
 
 " Syntax theme "{{{
@@ -127,11 +127,6 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized "{{{
-  " let g:neosolarized_termtrans=1
-  " runtime ./colors/NeoSolarized.vim
-  " colorscheme NeoSolarized
-  "}}}
 
   " Use OceanicNext
   runtime ./colors/OceanicNext.vim
