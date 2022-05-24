@@ -1,2 +1,5 @@
 [nodejs]
 format = "via [⬢ $version](bold green) "
+
+[c]
+format = "via [C]($style) "
