@@ -16,20 +16,23 @@
 
 <h4 align="center">🚀 Meu ambiente de desenvolvimento</h4>
 
-## Resumo do meu setup
-- Estou usando windows terminal
+## 📝 Resumo do meu setup
+- Estou usando [alacritty](https://github.com/alacritty/alacritty) como emulador
 - Com powershell
 - gerenciando as aplicações com [chocolatey](https://chocolatey.org)
 - configurando temas com [starship](https://starship.rs)
 
-## ⬇️ Como baixar
+## ⬇️ Como baixar o "grosso"
 - Comece pelo [chocolatey](https://chocolatey.org/install)
-- Instale o starship
-  - `choco install starship`
+- Instale os bagulho
+  - `choco install mingw git starship openssh neovim nvm go`
 - notepad $PROFILE
   - Copie minha configuração
 - ...
 
+## ⚙ Como configurar o [NodeJs](https://nodejs.org)
+## ⚙ Como configurar o Alacritty + Powershell
+## ⚙ Como configurar o [Neovim](https://neovim.io)
 
 ## Créditos
 
