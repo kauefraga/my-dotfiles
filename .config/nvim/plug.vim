@@ -4,11 +4,14 @@ endif
 
 call plug#begin()
 
+Plug 'ellisonleao/gruvbox.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
 if has("nvim")
+  Plug 'itchyny/lightline.vim'
   Plug 'https://github.com/ap/vim-css-color'
+  Plug 'editorconfig/editorconfig-vim'
 
   Plug 'neovim/nvim-lspconfig'
   Plug 'williamboman/nvim-lsp-installer'
