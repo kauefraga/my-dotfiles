@@ -25,7 +25,7 @@
 ## ⬇️ Como baixar o "grosso"
 - Comece pelo [chocolatey](https://chocolatey.org/install)
 - Instale os bagulho
-  - `choco install mingw git starship openssh neovim nvm go`
+  - `choco install winrar mingw git starship openssh neovim nvm go`
 - notepad $PROFILE
   - Copie minha configuração
 - ...
