@@ -8,7 +8,7 @@ Invoke-Expression (&starship init powershell)
 Import-Module -Name Terminal-Icons
 
 # PSReadLine
-Set-PSReadLineOption -EditMode Emacs
+#Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 
@@ -34,6 +34,5 @@ function which ($command) {
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
-# Work dir
-cd ~
+# ~
 clear
