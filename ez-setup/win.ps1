@@ -23,7 +23,7 @@ Write-Host "[script] Starting..."
 
 Write-Host "[script] Installing..."
 # Install general stuff
-[void]choco install -y winrar git openssh mingw
+[void]choco install -y winrar git openssh mingw ccls 
 
 # Install lang and runtimes
 [void]choco install -y python go nvm
