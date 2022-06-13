@@ -34,6 +34,14 @@
 ## ⚙ Como configurar o Alacritty + Powershell
 ## ⚙ Como configurar o [Neovim](https://neovim.io)
 
+## Lsp
+- Go (gopls)
+- Html
+- Python (jedi lsp)
+- Json (jsonls)
+- Js/Ts (tsserver)
+- eslint
+
 ## Créditos
 
 - https://github.com/craftzdog/dotfiles-public
