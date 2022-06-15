@@ -16,11 +16,29 @@
 - win: `choco install winrar mingw git starship openssh neovim nvm go`
 - arch: `sudo pacman -S git neovim asdf kitty`
 
-## ⚙ How to set [NodeJs](https://nodejs.org)
-## ⚙ How to set Alacritty + Powershell
-## ⚙ How to set [Neovim](https://neovim.io)
+## ⚙ How to set
+<!-- Set nodejs init -->
+<details>
+ <summary>Nodejs</summary>
 
-## Lsp
+</details>
+<!-- Set nodejs end -->
+
+<!-- Set Alacritty + Powershell init -->
+<details>
+ <summary>Alacritty + Powershell</summary>
+
+</details>
+<!-- Set Alacritty + Powershell end -->
+
+<!-- Set neovim init -->
+<details>
+ <summary>Neovim</summary>
+
+</details>
+<!-- Set noevim end -->
+
+## ✏ Lsp
 - Go (gopls)
 - Html
 - Python (jedi lsp)
@@ -28,7 +46,9 @@
 - Js/Ts (tsserver)
 - eslint
 
-## Credits
+## 🤳 Gallery
+
+## 📜 Credits
 
 - https://github.com/schmeekygeek/dotfiles
 - https://github.com/craftzdog/dotfiles-public
