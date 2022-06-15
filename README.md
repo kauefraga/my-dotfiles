@@ -1,8 +1,8 @@
 <h1 align="center">My .files</h1>
 
-<h4 align="center">🚀 Meu ambiente de desenvolvimento</h4>
+<h4 align="center">🚀 My development environment</h4>
 
-## 📝 Resumo do meu setup
+## 📝 Software that i use
 - Terminal -> [alacritty](https://github.com/alacritty/alacritty) or kitty
 - Shell -> powershell or zsh
 - Prompt -> [starship](https://starship.rs)
@@ -12,13 +12,13 @@
 - Status bar -> polybar
 - System Monitor -> conky widget
 
-## ⬇️ Como baixar o "grosso"
+## ⬇️ How to install
 - win: `choco install winrar mingw git starship openssh neovim nvm go`
 - arch: `sudo pacman -S git neovim asdf kitty`
 
-## ⚙ Como configurar o [NodeJs](https://nodejs.org)
-## ⚙ Como configurar o Alacritty + Powershell
-## ⚙ Como configurar o [Neovim](https://neovim.io)
+## ⚙ How to set [NodeJs](https://nodejs.org)
+## ⚙ How to set Alacritty + Powershell
+## ⚙ How to set [Neovim](https://neovim.io)
 
 ## Lsp
 - Go (gopls)
@@ -28,7 +28,7 @@
 - Js/Ts (tsserver)
 - eslint
 
-## Créditos
+## Credits
 
 - https://github.com/schmeekygeek/dotfiles
 - https://github.com/craftzdog/dotfiles-public
