@@ -1,34 +1,20 @@
 <h1 align="center">My .files</h1>
 
-<p align="center">
-  <a href="https://github.com/kauefraga/my-dotfiles/commits/main">
-    <img
-      alt="Github last commit"
-      src="https://img.shields.io/github/last-commit/kauefraga/my-dotfiles.svg"
-    />
-  </a>
-  <img
-    alt="GitHub LICENSE"
-    src="https://img.shields.io/github/license/kauefraga/my-dotfiles.svg"
-  />
-</p>
-
-
 <h4 align="center">🚀 Meu ambiente de desenvolvimento</h4>
 
 ## 📝 Resumo do meu setup
-- Estou usando [alacritty](https://github.com/alacritty/alacritty) como emulador
-- Com powershell
-- gerenciando as aplicações com [chocolatey](https://chocolatey.org)
-- configurando temas com [starship](https://starship.rs)
+- Terminal -> [alacritty](https://github.com/alacritty/alacritty) or kitty
+- Shell -> powershell or zsh
+- Prompt -> [starship](https://starship.rs)
+- IDE/Text Editor -> neovim & vscode
+- Note-Taking -> notion
+- Application Launcher -> rofi
+- Status bar -> polybar
+- System Monitor -> conky widget
 
 ## ⬇️ Como baixar o "grosso"
-- Comece pelo [chocolatey](https://chocolatey.org/install)
-- Instale os bagulho
-  - `choco install winrar mingw git starship openssh neovim nvm go`
-- notepad $PROFILE
-  - Copie minha configuração
-- ...
+- win: `choco install winrar mingw git starship openssh neovim nvm go`
+- arch: `sudo pacman -S git neovim asdf kitty`
 
 ## ⚙ Como configurar o [NodeJs](https://nodejs.org)
 ## ⚙ Como configurar o Alacritty + Powershell
@@ -44,6 +30,7 @@
 
 ## Créditos
 
+- https://github.com/schmeekygeek/dotfiles
 - https://github.com/craftzdog/dotfiles-public
 
 ## 📝 License
