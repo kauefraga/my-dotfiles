@@ -1,5 +1,10 @@
+* text=auto
+
+*.md text diff=markdown
 *.md linguist-vendored=false
 *.md linguist-generated=false
 *.md linguist-documentation=false
 *.md linguist-detectable=true
 
+*.gitattributes text
+.gitignore      text
