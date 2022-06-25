@@ -16,11 +16,11 @@
 
 # sapphire
 format = """
-[┌───\\($username@$hostname\\)──\\[$directory\\]](fg:#85c1dc) $time
+[┌───\\($username@$hostname\\)──\\[ $directory \\]](fg:#85c1dc) $time
 [└─$character](fg:#85c1dc) """
 
-# Disable the blank line at the start of the prompt
-# add_newline = false
+# The blank line at the start of the prompt
+add_newline = true
 
 [character]
 success_symbol = "[\\$](bold fg:#ca9ee6)" # mauve
@@ -40,16 +40,15 @@ format = "[$hostname](fg:#ca9ee6)" # mauve
 
 [directory]
 style = "bold fg:#c6d0f5" # text
-format = "[ $path ]($style)"
+format = "[$path]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-"www" = "🌐 "
+"Documents" = ""
+"Downloads" = ""
+"Music" = ""
+"Pictures" = ""
 # Keep in mind that the order matters. For example:
 # "Important Documents" = "  "
 # will not be replaced, because "Documents" was already substituted before.
@@ -58,7 +57,7 @@ truncation_symbol = "…/"
 
 [c]
 symbol = " "
-style = "fg:#86BBD8"
+style = "fg:#8caaee" # blue
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
@@ -72,7 +71,7 @@ format = '[ $all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "fg:#86BBD8"
+style = "fg:#99d1db" # sky
 format = '[ $symbol ($version) ]($style)'
 
 [java]
@@ -87,7 +86,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ""
-style = "fg:#ef9f76"
+style = "fg:#ef9f76" # peach
 format = '[$symbol ($version)]($style)'
 
 [time]
