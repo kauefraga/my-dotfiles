@@ -1,15 +1,101 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+#   /$$   /$$ /$$$$$$$$
+#  | $$  /$$/| $$_____/
+#  | $$ /$$/ | $$
+#  | $$$$$/  | $$$$$
+#  | $$  $$  | $$__/
+#  | $$\  $$ | $$
+#  | $$ \  $$| $$      Author: Kauê Fraga Rodrigues
+#  |__/  \__/|__/      github.com/kauefraga/my-dotfiles
+# Using https://github.com/catppuccin/catppuccin frappe
 
-# Inserts a blank line between shell prompts
-add_newline = true
+# () = style
+# fg = foreground/letters color
+# bg = background color
+# \\@ = escape char
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character] # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
 
-[nodejs]
-format = "via [⬢ $version](bold green) "
+# sapphire
+format = """
+[┌───\\($username@$hostname\\)──\\[$directory\\]](fg:#85c1dc) $time
+[└─$character](fg:#85c1dc) """
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+[character]
+success_symbol = "[\\$](bold fg:#ca9ee6)" # mauve
+error_symbol = "[\\$](bold fg:#e78284)" # Red
+
+[username]
+disabled = false
+style_user = "fg:#ca9ee6" # mauve
+style_root = "fg:#e78284" # red
+format = "[$user]($style)"
+show_always = true
+
+[hostname]
+disabled = false
+ssh_only = false
+format = "[$hostname](fg:#ca9ee6)" # mauve
+
+[directory]
+style = "bold fg:#c6d0f5" # text
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"www" = "🌐 "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
 
 [c]
-format = "via [C]($style) "
+symbol = " "
+style = "fg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = " "
+style = "fg:#e5c890" # yellow
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#e5c890" # yellow
+format = '[ $all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "fg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "fg:#ef9f76" # peach
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:#a6d189" # green
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "fg:#ef9f76"
+format = '[$symbol ($version)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:#626880" # surface2
+format = '[♥ $time]($style)'
+
+[cmd_duration]
+min_time = 500
+format = "underwent [$duration](bold yellow)"
