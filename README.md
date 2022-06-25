@@ -16,6 +16,8 @@
 - win: `choco install winrar mingw git starship openssh neovim nvm go alacritty`
 - arch: `sudo pacman -S git neovim asdf kitty`
 
+<!-- msys2 should be util https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/ -->
+
 ## ⚙ How to set (recommendation: search by yourself)
 <!-- Set nodejs init -->
 <details>
