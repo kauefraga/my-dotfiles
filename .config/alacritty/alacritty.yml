@@ -1,6 +1,6 @@
 # Imports
 import:
-  - '~\appdata\roaming\alacritty\themes\gruvbox.yml'
+  - '~\appdata\roaming\alacritty\themes\omni.yml'
   - '~\appdata\roaming\alacritty\maps.yml'
 
 # Font Settings
