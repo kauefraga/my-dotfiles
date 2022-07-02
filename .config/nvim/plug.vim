@@ -9,9 +9,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
 if has("nvim")
-  Plug 'itchyny/lightline.vim'
   Plug 'https://github.com/ap/vim-css-color'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'nvim-lualine/lualine.nvim'
 
   Plug 'neovim/nvim-lspconfig'
   Plug 'williamboman/nvim-lsp-installer'
