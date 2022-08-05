@@ -13,7 +13,8 @@
 - System Monitor -> conky widget
 
 ## ⬇️ How to install
-- win: `choco install winrar mingw git starship openssh neovim nvm go alacritty`
+- win [(with Scoop)](https://scoop.sh):
+  - `powershell -Command "& {iwr -useb https://raw.githubusercontent.com/kauefraga/my-dotfiles/main/ez-setup/win.ps1 | iex}"`
 - arch: `sudo pacman -S git neovim asdf kitty`
 
 <!-- msys2 should be util https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/ -->
@@ -55,8 +56,8 @@
 <details>
   <summary>Alacritty + Powershell</summary>
   <ul>
-    <li><code>choco install alacritty</code></li>
-    <li><a href="https://github.com/PowerShell/PowerShell">powershell</a></li>
+    <li><code>scoop install alacritty</code></li>
+    <li><code>scoop install powershell</code></li>
   </ul>
 </details>
 <!-- Set Alacritty + Powershell end -->
@@ -65,7 +66,7 @@
 <details>
   <summary>Neovim</summary>
   <ul>
-    <li><code>choco install neovim</code></li>
+    <li><code>scoop install neovim</code></li>
     <li>You will need <a href="https://github.com/junegunn/vim-plug">Vim plug</a></li>
     <li>If you want, use my config 😊 (.config/nvim)</li>
   </ul>
@@ -73,12 +74,13 @@
 <!-- Set neovim end -->
 
 ## ✏ Lsp
+- Html/css (html/cssls)
+- tailwindcss
 - Go (gopls)
-- Html
-- Python (jedi lsp)
-- Json (jsonls)
+- Python (pyright)
 - Js/Ts (tsserver)
-- eslint
+- Json (jsonls)
+- Markdown (marksman)
 
 ## 🤳 Gallery
 
