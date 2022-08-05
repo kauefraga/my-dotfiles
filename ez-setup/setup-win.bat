@@ -11,6 +11,10 @@ color 2
 cd %userprofile%
 cls
 
+echo "DEPRECATED: use ~$ iex win.ps1 instead"
+pause
+exit /b 0
+
 :: verify if the user is admin
 net session > NUL 2>&1
 if %errorlevel% == 0 (
