@@ -1,0 +1,40 @@
+{
+  "basics": [
+    "git"
+  ],
+  "compilers": [
+    "llvm",
+    "mingw",
+    "mingw-winlibs",
+    "mingw-nuwen"
+  ],
+  "terminal": [
+    "alacritty",
+    "pwsh",
+    "fd",
+    "ripgrep",
+    "neovim",
+    "fzf",
+    "psfzf"
+  ],
+  "langs": [
+    "nvm",
+    "go",
+    "python"
+  ],
+  "frufru": [
+    "starship",
+    "neofetch",
+    "terminal-icons",
+    "meow"
+  ],
+  "extras": [
+    "vivaldi",
+    "notion",
+    "openvpn",
+    "openssh",
+    "openssl",
+    "gpg",
+    "vcredist2022"
+  ]
+}

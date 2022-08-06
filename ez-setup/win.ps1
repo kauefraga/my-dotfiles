@@ -8,63 +8,83 @@
 #  |__/  \__/|__/      github.com/kauefraga/my-dotfiles
 Clear-Host
 
-If (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
-{
-  Write-Warning "You don't have Administrator rights"
-  exit
+function Print {
+  param (
+    [string] $message,
+    [string] $color = "green"
+  )
+  Write-Host $message -ForegroundColor $color
 }
 
-Write-Host "[script] Starting..."
+Print "[script] author: @github.com/kauefraga"
 
-# Install Chocolatey package manager
-#Set-ExecutionPolicy AllSigned
-#Set-ExecutionPolicy Bypass -Scope Process -Force
-#iwr -useb "https://community.chocolatey.org/install.ps1" | Invoke-Expression
+if (-Not (Test-Path "$env:userprofile/scoop"))
+{
+  Invoke-RestMethod "get.scoop.sh" | Invoke-Expression
+  # irm get.scoop.sh | iex -> same as above
+}
 
-Write-Host "[script] Installing..."
-# Install general stuff
-[void]choco install -y winrar git openssh mingw ccls 
+<# TODO
+  ask the user about which packages he wants to install
+  parse the list of packages and install them
+#>
 
-# Install lang and runtimes
-[void]choco install -y python go nvm
+# q = question
+$qInstallPackages = Read-Host "[script] Do you want to install apps? [y/n] "
+$qConfigPackages = Read-Host "[script] Do you want to config apps? [y/n] "
+$qSpotifyP = Read-Host "[script] Do you want to run spotify script? [y/n] "
 
-# Install utils and prettiers
-[void]choco install -y neovim alacritty starship
-[void]Install-Module -Name Terminal-Icons -Repository PSGallery
+# Install packages :: initializing
+if ($qInstallPackages -eq "y")
+{
+  $packages = Get-Content "./packages.json" | ConvertFrom-Json
 
-# Install main apps
-[void]choco install -y vivaldi discord
-Write-Host "[script] Downloads finished"
+  Print "[script] Installing packages..."
+  scoop install $packages.basics
+  scoop install $packages.compilers
+  scoop install $packages.terminal
+  scoop install $packages.langs
+  scoop install $packages.frufru
+  scoop install $packages.extras
+
+  Print "[script] Installing packages... done"
+}
+# Install packages :: finished
+
+# Config packages :: initializing
+if ($qConfigPackages -eq "y")
+{
+  # Set-Location = cd = chdir
+  Set-Location "$env:userprofile"
+  git clone "https://github.com/kauefraga/my-dotfiles.git"
+  Set-Location "./my-dotfiles"
+
+  Print "[script] Configuring packages..."
+  Move-Item -Path "./.config/nvim" -Destination "$env:LOCALAPPDATA"
+
+  Move-Item -Path "./.config/alacritty" -Destination "$env:APPDATA"
+
+  Move-Item -Path "./.config/neofetch" -Destination "../.config"
+
+  Move-Item -Path "./.config/starship.toml" -Destination "../.config"
+
+  Move-Item -Path "./powershell" -Destination "../.config"
+
+  Move-Item -Force -Path "../.config/powershell/Microsoft.PowerShell_profile.ps1" -Destination "$env:USERPROFILE/scoop/apps/pwsh/current"
+
+  # TODO: config and install lsp nvim (vim-plug)
+
+  # nodejs env
+  nvm install lts
+  nvm use lts
+  npm i -g yarn pnpm
+
+  Print "[script] Configuring packages... done"
+}
+# Config packages :: finished
 
 
-Write-Host "[script] Configuring..."
-cd $env:USERPROFILE
 
-git clone https://github.com/kauefraga/my-dotfiles.git dotfiles
-
-# Powershell config
-mkdir .\.config\powershell
-iwr -Outfile .\powershell\user_profile.ps1 -useb "https://raw.githubusercontent.com/kauefraga/my-dotfiles/main/powershell/user_profile.ps1"
-
-# Powershell init
-mkdir .\Documents\WindowsPowerShell
-". $env:USERPROFILE\.config\powershell\user_profile.ps1" > .\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-
-# Nvim config
-mkdir $env:LOCALAPPDATA\nvim
-mv .\dotfiles\.config\nvim\* $env:LOCALAPPDATA\nvim
-
-# Install vim-plug
-iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-  ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
-
-nvim +PlugInstall
-
-# ...
-# Config alacritty
 # Run spotify script
-
-
-
-
-
+iwr -useb "raw.githubusercontent.com/amd64fox/SpotX/main/Install.ps1" | iex
+# Invoke-WebRequest -UseBasicParsing "raw.githubusercontent.com/amd64fox/SpotX/main/Install.ps1" | Invoke-Expression
