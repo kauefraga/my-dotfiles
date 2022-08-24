@@ -4,7 +4,7 @@ endif
 
 call plug#begin()
 
-Plug 'ellisonleao/gruvbox.nvim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
@@ -27,6 +27,8 @@ if has("nvim")
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
   Plug 'kyazdani42/nvim-web-devicons'
