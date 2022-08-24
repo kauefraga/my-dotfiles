@@ -20,6 +20,7 @@ Print "[script] author: @github.com/kauefraga"
 
 if (-Not (Test-Path "$env:userprofile/scoop"))
 {
+  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
   Invoke-RestMethod "get.scoop.sh" | Invoke-Expression
   # irm get.scoop.sh | iex -> same as above
 }
