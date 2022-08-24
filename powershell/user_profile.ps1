@@ -4,9 +4,6 @@
 # Configuration
 Invoke-Expression (&starship init powershell)
 
-# Imports
-Import-Module -Name Terminal-Icons
-
 # PSReadLine
 #Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
@@ -23,12 +20,11 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineOption -ShowToolTips
 
 # Fzf
-Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Env
 $env:GIT_SSH = "C:\Program Files\OpenSSH-Win64\ssh.exe"
-$env:NVIM_HOME = "C:\Users\kauefraga\AppData\Local\nvim"
+$env:NVIM_HOME = "$env:USERPROFILE\AppData\Local\nvim"
 
 # Alias
 Set-Alias -Name vim -Value nvim
