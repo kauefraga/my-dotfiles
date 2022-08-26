@@ -3,6 +3,10 @@ import:
   - '~\appdata\roaming\alacritty\themes\omni.yml'
   - '~\appdata\roaming\alacritty\maps.yml'
 
+shell:
+  program: 'C:\Users\kauef\scoop\apps\pwsh\current\pwsh.exe'
+  #args: '--login'
+
 # Font Settings
 font:
   size: 15.0
