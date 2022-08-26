@@ -121,7 +121,7 @@ if exists("&termguicolors") && exists("&winblend")
   " Use OceanicNext
   "runtime ./colors/OceanicNext.vim
   "colorscheme OceanicNext
-  colorscheme gruvbox
+  colorscheme dracula
 endif
 
 "}}}
