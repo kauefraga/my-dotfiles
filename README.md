@@ -86,6 +86,7 @@
 
 ## 📜 Credits
 
+- https://github.com/nvim-lua/kickstart.nvim
 - https://github.com/schmeekygeek/dotfiles
 - https://github.com/craftzdog/dotfiles-public
 
