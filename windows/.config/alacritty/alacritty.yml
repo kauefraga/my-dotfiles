@@ -1,36 +1,35 @@
 # Imports
 import:
-  - '~\appdata\roaming\alacritty\themes\omni.yml'
-  - '~\appdata\roaming\alacritty\maps.yml'
+  - '~\appdata\roaming\alacritty\themes\catppuccin.yml'
+  - '~\appdata\roaming\alacritty\keymaps.yml'
 
 shell:
-  program: '~\scoop\apps\pwsh\current\pwsh.exe'
-  #args: '--login'
+  program: 'C:\Users\kauefraga\scoop\apps\pwsh\current\pwsh.exe'
+  args: 
+    - '-wd d:\www'
+    - '-nol'
+    - '-NoProfileLoadTime'
 
 # Font Settings
 font:
   size: 15.0
   normal:
-    family: 'Hack Nerd Font Mono'
-    #style: Regular
+    family: 'JetBrains Mono'
 
   bold:
-    family: 'Hack Nerd Font Mono'
-    #style: Bold
+    family: 'JetBrains Mono'
 
   italic:
-    family: 'Dank Mono'
-    #style: Italic
+    family: 'JetBrains Mono'
 
   bold_italic:
-    family: 'Hack Nerd Font Mono'
-    #style: Bold Italic
+    family: 'JetBrains Mono'
 
 # Window Settings
 window:
   # Window dimensions (changes require restart)
   dimensions:
-    columns: 80
+    columns: 110
     lines: 25
 
   # Window position (changes require restart)
@@ -52,7 +51,7 @@ window:
   opacity: 0.97
 
   # Window title
-  title: arch
+  title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
