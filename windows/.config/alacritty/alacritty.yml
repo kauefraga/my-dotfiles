@@ -4,7 +4,7 @@ import:
   - '~\appdata\roaming\alacritty\maps.yml'
 
 shell:
-  program: 'C:\Users\kauef\scoop\apps\pwsh\current\pwsh.exe'
+  program: '~\scoop\apps\pwsh\current\pwsh.exe'
   #args: '--login'
 
 # Font Settings
