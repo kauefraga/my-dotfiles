@@ -1,0 +1,6 @@
+[user]
+	email = kauefragarodrigues456@gmail.com
+	name = Kauê Fraga Rodrigues
+	signingkey = A3C6B01EB5D8215C
+[commit]
+	gpgsign = true
