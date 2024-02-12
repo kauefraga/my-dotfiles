@@ -1,4 +1,6 @@
 # Configs
+eval $(ssh-agent -c) > /dev/null
+
 set GPG_TTY $(tty)
 export GPG_TTY
 
