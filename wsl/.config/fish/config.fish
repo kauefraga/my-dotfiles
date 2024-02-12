@@ -1,6 +1,4 @@
 # Configs
-eval $(ssh-agent -c) > /dev/null
-
 set GPG_TTY $(tty)
 export GPG_TTY
 
@@ -19,3 +17,6 @@ function gitsetup
     echo "Remember to configure ssh and gpg ^^"  
 end
 
+function sshkrl
+    ssh-add ~/.ssh/id_ed25519d
+end
