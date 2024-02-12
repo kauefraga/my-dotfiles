@@ -1,8 +1,5 @@
 # My Dotfiles
 
-> [!TIP]
-> I create another repository for my backup scripts. [My Backuper](https://github.com/kauefraga/my-backuper) (currently private).
-
 ## 📜 List of configs
 
 ### Windows
