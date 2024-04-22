@@ -8,14 +8,24 @@ set --export JAVA_HOME /usr/lib/jvm/jdk-21-oracle-x64
 # gatling
 set --export GATLING_HOME $HOME/gatling
 
-# PATH
-set --export PATH /opt/nvim-linux64/bin $PATH # neovim
-set --export PATH /usr/local/go/bin $PATH # golang
-set --export PATH $HOME/.cargo/bin $PATH # rust
-set --export PATH $HOME/.bun/bin $PATH # bun
-set --export PATH $JAVA_HOME $PATH # java
+# ruby
+set --export GEM_HOME "$HOME/.gems"
+set --export PATH $HOME/.gems/bin $PATH
 
-set --export PATH $HOME/www/anime-archive/bin/linux $PATH # anime archive
+# neovim
+set --export PATH /opt/nvim-linux64/bin $PATH
+
+# golang
+set --export PATH /usr/local/go/bin $PATH
+
+# rust
+set --export PATH $HOME/.cargo/bin $PATH
+
+# java
+set --export PATH $JAVA_HOME $PATH
+
+# anime archive
+set --export PATH $HOME/www/anime-archive/bin/linux $PATH
 
 # Configs
 set --export GPG_TTY $(tty)
@@ -35,6 +45,7 @@ alias gcm='git commit -m'
 alias gs='git status'
 alias gssb='git status -sb'
 alias gl='git log --oneline'
+alias gb='git branch'
 
 # Functions
 function gitsetup
@@ -50,4 +61,9 @@ end
 function sshkrl
     eval $(ssh-agent -c)
     ssh-add ~/.ssh/id_ed25519
+end
+
+if set -q ZELLIJ
+else
+  zellij
 end
