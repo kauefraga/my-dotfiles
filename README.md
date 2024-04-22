@@ -1,13 +1,14 @@
-# My Dotfiles
+# My .files
 
-## 📜 List of configs
+## 🛠 Development tools
 
-### Windows
+Currently I'm using Ubuntu via WSL as my dev OS.
 
-- [Alacritty](windows/.config/alacritty/)
-- [Powershell](windows/powershell/)
-
-### Linux
+- **Terminal**: [windows terminal](https://github.com/microsoft/terminal)
+- **Shell**: [fish](https://fishshell.com/)
+- **Prompt styles** and **colors**: [starship](https://starship.rs/), default preset
+- **Terminal workspace**: [zellij](https://zellij.dev/), catppuccin mocha theme
+- **Code editor**: [visual studio code](https://code.visualstudio.com/) + [neovim](https://neovim.io/) ([kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim))
 
 ## 🦄 Gallery
 
