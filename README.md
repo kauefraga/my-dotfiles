@@ -6,7 +6,7 @@ Currently I'm using Ubuntu via WSL as my dev OS.
 
 - **Terminal**: [windows terminal](https://github.com/microsoft/terminal)
 - **Shell**: [fish](https://fishshell.com/)
-- **Prompt styles** and **colors**: [starship](https://starship.rs/), default preset
+- **Prompt styles** and **colors**: [starship](https://starship.rs/), [config](wsl/.config/starship.toml)
 - **Terminal workspace**: [zellij](https://zellij.dev/), catppuccin mocha theme
 - **Code editor**: [visual studio code](https://code.visualstudio.com/) + [neovim](https://neovim.io/) ([kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim))
 
