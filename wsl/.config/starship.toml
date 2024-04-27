@@ -1,0 +1,24 @@
+format = "$directory$git_branch$character"
+
+[directory]
+format = "[:$path]($style)[$read_only]($read_only_style) "
+home_symbol = "home"
+read_only = " ro"
+
+[character]
+success_symbol = "[λ](bold green)"
+error_symbol = "[λ](bold red)"
+vimcmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[git_branch]
+symbol = ""
