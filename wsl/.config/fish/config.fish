@@ -12,31 +12,30 @@ set --export GATLING_HOME $HOME/gatling
 set --export GEM_HOME "$HOME/.gems"
 set --export PATH $HOME/.gems/bin $PATH
 
-# neovim
-set --export PATH /opt/nvim-linux64/bin $PATH
+# PATH
+set --export PATH /opt/nvim-linux64/bin $PATH # neovim
+set --export PATH /usr/local/go/bin $PATH # go
+set --export PATH $HOME/.cargo/bin $PATH # rust
+set --export PATH $HOME/.bun/bin $PATH # bun
+set --export PATH $JAVA_HOME $PATH # java
 
-# golang
-set --export PATH /usr/local/go/bin $PATH
-
-# rust
-set --export PATH $HOME/.cargo/bin $PATH
-
-# java
-set --export PATH $JAVA_HOME $PATH
-
-# anime archive
-set --export PATH $HOME/www/anime-archive/bin/linux $PATH
+set --export PATH $HOME/go/bin $PATH # go binaries
+set --export PATH $HOME/.local/bin $PATH
+set --export PATH $HOME/www/anime-archive/bin/linux $PATH # anime archive
 
 # Configs
 set --export GPG_TTY $(tty)
 
 starship init fish | source
 
+zoxide init fish | source
+
 # Aliases
 alias bat='batcat'
 alias vim='nvim'
 alias python='python3'
 alias pip='pip3'
+alias ca='cargo'
 
 alias g='git'
 alias ga='git add'
