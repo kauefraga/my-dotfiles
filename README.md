@@ -12,4 +12,6 @@ Currently I'm using Manjaro as my dev OS.
 
 ## 🦄 Gallery
 
+Most of these wallpapers I stole from the [gboncoffee wallpapers repository](https://github.com/gboncoffee/wallpapers).
+
 [![Manjaro with an ASCII cat (background image)](gallery/manjaro.png)](wallpapers/blue-cat.png)
