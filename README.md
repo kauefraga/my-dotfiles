@@ -4,7 +4,7 @@
 
 Currently I'm using Manjaro as my dev OS.
 
-- **Terminal**: gnome terminal
+- **Terminal**: [wezterm](https://wezfurlong.org/wezterm/)
 - **Shell**: [fish](https://fishshell.com/)
 - **Prompt styles** and **colors**: [starship](https://starship.rs/), [config](wsl/.config/starship.toml)
 - **Terminal workspace**: [zellij](https://zellij.dev/), catppuccin mocha theme
