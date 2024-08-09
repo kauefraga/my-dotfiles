@@ -6,6 +6,8 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 14.0
 config.color_scheme = 'Ayu Mirage'
 config.window_background_opacity = 0.975
+config.initial_cols = 120
+config.initial_rows = 30
 
 --[[ color schemes
   ChallengerDeep
@@ -14,14 +16,6 @@ config.window_background_opacity = 0.975
   Catppuccin Mocha
   Gruvbox Light
 --]]
-
---[[
-config.window_background_image = '/home/kauefraga/Pictures/himurakenshin.png'
-config.window_background_image_hsb = {
-  brightness = 0.025,
-  hue = 1.0,
-  saturation = 0.0,
-} --]]
 
 config.window_frame = {
   font = wezterm.font { family = 'Roboto', weight = 'Bold' },
