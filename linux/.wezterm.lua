@@ -4,10 +4,11 @@ local config = wezterm.config_builder()
 
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 14.0
-config.color_scheme = 'Ayu Mirage'
+config.color_scheme = 'Catppuccin Mocha'
 config.window_background_opacity = 0.975
 config.initial_cols = 120
 config.initial_rows = 30
+config.hide_tab_bar_if_only_one_tab = true
 
 --[[ color schemes
   ChallengerDeep

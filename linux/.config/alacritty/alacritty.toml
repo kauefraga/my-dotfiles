@@ -1,0 +1,17 @@
+import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[window]
+padding = { x = 6, y = 2 }
+dimensions = { columns = 110, lines = 28 }
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true 
+decorations_theme_variant = "None"
+decorations = "Full"
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+size = 14
+builtin_box_drawing = true 

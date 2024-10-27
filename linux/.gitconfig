@@ -1,0 +1,22 @@
+[user]
+	email = 88486000+kauefraga@users.noreply.github.com
+	name = Kauê Fraga Rodrigues
+
+[alias]
+  l = "!. ~/.githelpers && pretty_git_log"
+  la = "!git l --all"
+  lr = "!git l -30"
+  lra = "!git lr --all"
+  lg = "!git l -G $1 -- $2"
+
+[commit]
+	gpgsign = true
+
+[core]
+	editor = nvim
+
+[push]
+	autoSetupRemote = true
+
+[init]
+	defaultBranch = main
