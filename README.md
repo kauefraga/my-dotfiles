@@ -1,14 +1,27 @@
-# My .files
+# My dotfiles ![last commit](https://img.shields.io/github/last-commit/kauefraga/my-dotfiles)
 
-## 🛠 Development tools
+Here's a reference of my configs and tools.
 
-Currently I'm using Manjaro as my dev OS.
+To save the configs I just run the script
 
-- **Terminal**: [wezterm](https://wezfurlong.org/wezterm/)
-- **Shell**: [fish](https://fishshell.com/)
-- **Prompt styles** and **colors**: [starship](https://starship.rs/), [config](wsl/.config/starship.toml)
-- **Terminal workspace**: [zellij](https://zellij.dev/), catppuccin mocha theme
-- **Code editor**: [visual studio code](https://code.visualstudio.com/) + [lunar vim](https://www.lunarvim.org/)
+```sh
+./sc.sh
+```
+
+## 🦚 Environment
+
+I'm using Ubuntu and Gnome.
+
+- Cursors: [Oreo Cursors](https://www.gnome-look.org/p/1360254/) (blue)
+- Icons: [Yaru](https://github.com/ubuntu/yaru) (yaru purple)
+
+## 🛠 Dev tools
+
+- **Terminal**: [wezterm](https://wezfurlong.org/wezterm/) ([config](linux/.wezterm.lua))
+- **Shell**: [fish](https://fishshell.com/) ([config](linux/.config/fish/config.fish))
+- **Prompt styles** and **colors**: [starship](https://starship.rs/) ([config](linux/.config/starship.toml))
+- **Terminal workspace**: [zellij](https://zellij.dev/) ([config](linux/.config/zellij/config.kdl))
+- **Code editor**: [visual studio code](https://code.visualstudio.com/) ([settings](https://gist.github.com/kauefraga/811ad980f04ea7c2a3ad584a00ee49b1)) + [lunar vim](https://www.lunarvim.org/)
 
 ## 🦄 Gallery
 
